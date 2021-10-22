@@ -7,8 +7,10 @@
 ## Technologies Used
 
 * _JavaScript_
+* _JQuery_
 * _HTML_
 * _CSS_
+* _Bootstrap_
 * _Markdown_
 
 ## Description
@@ -17,11 +19,9 @@ _This application allow users to decide which programming language is most well 
 
 ## Setup/Installation Requirements
 
-* _Clone this repository to your desktop._
-* _Navigate to the top level of directory._
-* _Open index.html in your browser._
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Open terminal and enter "git clone https://github.com/popoyuyu/programming-language-suggester.git"._
+* _Enter "cd programming-language-suggester" to navigate into project directory._
+* _Enter "code ." to open project file in VSCode._
 
 ## Known Bugs
 
