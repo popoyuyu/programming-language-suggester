@@ -6,6 +6,7 @@ $(document).ready(function () {
     const time = $("input:radio[name=time]:checked").val();
     const snack = $("input:radio[name=snack]:checked").val();
     const drink = $("input:radio[name=drink]:checked").val();
+    const name = $("#name").val();
     let result = "";
 
     if (study === "visual" && location === "library" && time === "morning" && snack === "fruits" && drink === "soda") {
@@ -20,8 +21,7 @@ $(document).ready(function () {
       result = "Python";
     }
 
-
-
+    result = name + "you should study" + result
     $("#result").text(result);
     $("#result").show();
   });
