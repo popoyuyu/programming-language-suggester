@@ -9,17 +9,58 @@ $(document).ready(function () {
     const name = $("#name").val();
     let result = "";
 
-    if (study === "visual" || location === "library" && time === "morning" && snack === "fruits" && drink === "soda") {
-      result = "C#";
-    }
+    let cSharpCounter = 0
+    let jsCounter = 0
+    let pythonCounter = 0
 
-    else if (study === "audio" && location === "cafe" && time === "afternoon" && snack === "chips" && drink === "coffee") {
-      result = "JavaScript";
+    if (study === "visual") {
+      cSharpCounter = cSharpCounter + 1
+    } else if (study === "audio") {
+      jsCounter = jsCounter + 1
+    } else if (study === "handson") {
+      pythonCounter = pythonCounter + 1
     }
+    if (location === "library") {
+      cSharpCounter = cSharpCounter + 1
+    } else if (location === "cafe") {
+      cSharpCounter = cSharpCounter + 1
+    } else if (location === "home") {
+      pythonCounter = pythonCounter + 1
+    }
+    if (time === "morning") {
+      pythonCounter = pythonCounter + 1
+    } else if (time === "afternoon") {
+      jsCounter = jsCounter + 1
+    } else if (time === "night") {
+      cSharpCounter = cSharpCounter + 1
+    }
+    if (snack === "fruits") {
+      cSharpCounter = cSharpCounter + 1
+    } else if (snack === "chips") {
+      jsCounter = jsCounter + 1
+    } else if (snack === "popcorn") {
+      pythonCounter = pythonCounter + 1
+    }
+    if (drink === "soda") {
+      cSharpCounter = cSharpCounter + 1
+    } else if (drink === "coffee") {
+      jsCounter = jsCounter + 1
+    } else if (drink === "tea") {
+      pythonCounter = pythonCounter + 1
+    }
+    console.log(cSharpCounter, jsCounter, pythonCounter);
 
-    else if (study === "handson" && location === "home" && time === "night" && snack === "popcorn" && drink === "tea") {
-      result = "Python";
-    }
+    // if (study === "visual" || location === "library" && time === "morning" && snack === "fruits" && drink === "soda") {
+    //   result = "C#";
+    // }
+
+    // else if (study === "audio" && location === "cafe" && time === "afternoon" && snack === "chips" && drink === "coffee") {
+    //   result = "JavaScript";
+    // }
+
+    // else if (study === "handson" && location === "home" && time === "night" && snack === "popcorn" && drink === "tea") {
+    //   result = "Python";
+    // }
 
     result = name + "you should study" + result
     $("#result").text(result);
