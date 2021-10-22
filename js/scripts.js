@@ -6,7 +6,7 @@ $(document).ready(function () {
     const time = $("input:radio[name=time]:checked").val();
     const snack = $("input:radio[name=snack]:checked").val();
     const drink = $("input:radio[name=drink]:checked").val();
-    let result;
+    let result = "";
 
     if (study === "visual" && location === "library" && time === "morning" && snack === "fruits" && drink === "soda") {
       result = "C#";
@@ -16,7 +16,11 @@ $(document).ready(function () {
       result = "JavaScript";
     }
 
-    else { result = "None"; }
+    else if (study === "handson" && location === "home" && time === "night" && snack === "popcorn" && drink === "tea") {
+      result = "Python";
+    }
+
+
 
     $("#result").text(result);
     $("#result").show();
