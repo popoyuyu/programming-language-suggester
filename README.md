@@ -25,7 +25,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _When counter is tied, the answer is inconclusive._
+* _No known bugs._
 
 
 ## License

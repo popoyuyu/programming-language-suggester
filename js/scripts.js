@@ -65,13 +65,12 @@ $(document).ready(function () {
     if (cSharpCounter > pythonCounter && cSharpCounter > jsCounter) {
       result = name + " you should study C#."
     }
-    else if (pythonCounter > cSharpCounter && pythonCounter > jsCounter) {
+    else if (pythonCounter >= cSharpCounter && pythonCounter >= jsCounter) {
       result = name + " you should study Python."
     }
-    else if (jsCounter > cSharpCounter && jsCounter > pythonCounter) {
+    else if (jsCounter >= cSharpCounter && jsCounter >= pythonCounter) {
       result = name + " you should study JavaScript."
     }
-    else { result = "Inconclusive please redo test." }
 
     $("#result").text(result);
     $("#result").fadeIn();
