@@ -9,7 +9,7 @@ $(document).ready(function () {
     const name = $("#name").val();
     let result = "";
 
-    if (study === "visual" && location === "library" && time === "morning" && snack === "fruits" && drink === "soda") {
+    if (study === "visual" || location === "library" && time === "morning" && snack === "fruits" && drink === "soda") {
       result = "C#";
     }
 

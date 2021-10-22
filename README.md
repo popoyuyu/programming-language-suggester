@@ -25,7 +25,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _No known bugs._
+* _This app only works if all choices are either 1st, 2nd, or 3rd option of each category_
+* _All other combonation results in a string saying "you should study"_
 
 ## License
 
