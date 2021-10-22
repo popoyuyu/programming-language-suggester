@@ -1,11 +1,18 @@
 $(document).ready(function () {
-  $("formOne").submit(function (event) {
+  $("form#formOne").submit(function (event) {
     event.preventDefault();
-    const study = $("study").val();
-    const location = $("location").val();
-    const time = $("time").val();
-    const snack = $("snack").val();
-    const drink = $("drink").val();
+    const study = $("input:radio[name=study]:checked").val();
+    const location = $("input:radio[name:location]:checked").val();
+    const time = $("input:radio[name:time]:checked").val();
+    const snack = $("input:radio[name:snack]:checked").val();
+    const drink = $("input:radio[name:drink]:checked").val();
     let result;
-  })
-})
+
+    if (study === "visual" && location === "library" && time === "morning" && snack === "fruits" && drink === "soda")) {
+    result = "C#";
+  }
+    else { result = "None"; }
+
+  $("#result").text("C#");
+});
+});
