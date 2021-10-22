@@ -74,6 +74,6 @@ $(document).ready(function () {
     else { result = "Inconclusive please redo test." }
 
     $("#result").text(result);
-    $("#result").show();
+    $("#result").fadeIn();
   });
 });
